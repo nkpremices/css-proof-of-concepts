@@ -1,0 +1,21 @@
+@mixin clearFix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin gradientTextEffet ($color-one, $color-two) {
+  background-image: linear-gradient(to right, $color-one, $color-two);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
